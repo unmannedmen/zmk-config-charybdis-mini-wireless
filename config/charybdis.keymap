@@ -14,7 +14,9 @@
         compatible = "zmk,input-listener";
         device = <&trackball>;
         input-processors = <&zip_xy_scaler 1 2>, <&zip_temp_layer 4 400>;
- // Switch to auto-mouse temp layer, decrease sensitivity
+
+        // Switch to auto-mouse temp layer, decrease sensitivity
+
         scroll {
             layers = <5>; // SCROLL
             input-processors =
@@ -80,6 +82,11 @@
         CapsWord {
             bindings = <&caps_word>;
             key-positions = <17 18>;
+        };
+
+        space {
+            bindings = <&kp LS(SPACE)>;
+            key-positions = <37 40>;
         };
     };
 
