@@ -151,10 +151,10 @@
 
         FUN {
             bindings = <
-&trans  &trans     &rgb_ug RGB_COLOR_HSB(191,0,100)  &none                &rgb_ug RGB_EFF    &rgb_ug RGB_TOG    &kp F11   &kp F7  &kp F8  &kp F9  &kp F10    &none
-&trans  &none      &kp LC(PG_UP)                     &none                &kp LC(PAGE_DOWN)  &kp K_APP          &kp BSPC  &kp F4  &kp F5  &kp F6  &trans     &kp LS(BSPC)
-&trans  &kp LSHFT  &kp LS(F11)                       &none                &kp LC(N1)         &none              &kp F12   &kp F1  &kp F2  &kp F3  &kp RSHFT  &trans
-                                                     &mt LA(LC(V)) LC(V)  &kp LC(C)          &kp LC(X)          &trans    &trans
+&rgb_ug RGB_ON                  &rgb_ug RGB_OFF  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR      &rgb_ug RGB_HUI    &rgb_ug RGB_HUD    &kp F11          &kp F7           &kp F8  &kp F9  &kp F10    &rgb_ug RGB_SPI
+&rgb_ug RGB_BRI                 &rgb_ug RGB_BRD  &kp LC(PG_UP)    &none                &kp LC(PAGE_DOWN)  &kp K_APP          &kp BSPC         &kp F4           &kp F5  &kp F6  &trans     &kp LS(BSPC)
+&rgb_ug RGB_COLOR_HSB(0,0,100)  &kp LSHFT        &kp LS(F11)      &none                &kp LC(N1)         &none              &kp F12          &kp F1           &kp F2  &kp F3  &kp RSHFT  &rgb_ug RGB_SPD
+                                                                  &mt LA(LC(V)) LC(V)  &kp LC(C)          &kp LC(X)          &rgb_ug RGB_SAI  &rgb_ug RGB_SAD
             >;
         };
 
