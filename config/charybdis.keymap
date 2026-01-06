@@ -54,13 +54,13 @@
         };
 
         BrakLeft {
-            bindings = <&kp LEFT_BRACKET>;
+            bindings = <&kp RBKT>;
             key-positions = <26 28>;
         };
 
         BrakRight {
             bindings = <&kp BSLH>;
-            key-positions = <8 20>;
+            key-positions = <31 33>;
         };
 
         minus {
@@ -73,9 +73,9 @@
             key-positions = <33 32>;
         };
 
-        Delete {
-            bindings = <&kp DELETE>;
-            key-positions = <8 9>;
+        win {
+            bindings = <&kp LEFT_GUI>;
+            key-positions = <20 19 21>;
         };
 
         henkan {
@@ -124,26 +124,26 @@
 
         BASE {
             bindings = <
-&kp ESC  &kp Q             &kp W      &kp E      &kp R               &kp T                     &kp Y                 &kp U               &kp I          &kp O              &kp P      &kp DEL
-&kp TAB  &u_mt LEFT_GUI A  &u_lt 2 S  &u_lt 3 D  &u_mt LEFT_SHIFT F  &kp G                     &kp H                 &u_mt LEFT_SHIFT J  &u_mt RCTRL K  &u_mt RIGHT_ALT L  &kp ENTER  &kp BACKSPACE
-&mo 5    &kp Z             &kp X      &kp C      &kp V               &kp B                     &kp N                 &kp M               &kp COMMA      &kp DOT            &kp FSLH   &mo 5
-                                      &kp LALT   &lt 1 SPACE         &mt LEFT_CONTROL LANG2    &mt LSHFT LANGUAGE_1  &lt 1 SPACE
+&kp ESC       &kp Q  &kp W    &kp E                    &kp R        &kp T                     &kp Y                 &kp U             &kp I        &kp O            &kp P      &kp DEL
+&kp TAB       &kp A  &lt 2 S  &lt 3 D                  &mt LSHFT F  &kp G                     &kp H                 &mt LEFT_SHIFT J  &mt RCTRL K  &mt RIGHT_ALT L  &kp ENTER  &kp RALT
+&lt 5 ESCAPE  &kp Z  &kp X    &kp C                    &kp V        &kp B                     &kp N                 &kp M             &kp COMMA    &kp DOT          &kp FSLH   &lt 5 LS(BACKSPACE)
+                              &kp LANG_ZENKAKUHANKAKU  &lt 1 SPACE  &mt LEFT_CONTROL LANG2    &mt LSHFT LANGUAGE_1  &lt 1 SPACE
             >;
         };
 
         NAV {
             bindings = <
-&trans  &kp N6     &kp N7        &kp N8         &kp N9        &kp N0     &kp LG(Z)            &kp HOME           &kp UP_ARROW    &kp END          &trans  &trans
-&trans  &kp N1     &kp N2        &kp N3         &kp N4        &kp N5     &kp BACKSPACE        &kp LEFT_ARROW     &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &kp LS(BACKSPACE)
-&trans  &kp LSHFT  &kp LS(APOS)  &kp LS(MINUS)  &kp LS(SEMI)  &kp DOT    &kp LEFT_BRACKET     &kp F7             &kp F2          &kp F10          &trans  &trans
-                                 &trans         &trans        &trans     &mt LA(LC(V)) LC(V)  &u_mt LC(X) LC(C)
+&trans     &kp N6     &kp N7        &kp N8         &kp N9        &kp N0     &kp LG(Z)            &kp HOME           &kp UP_ARROW    &kp END          &trans  &trans
+&trans     &kp N1     &kp N2        &kp N3         &kp N4        &kp N5     &kp BACKSPACE        &kp LEFT_ARROW     &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans
+&kp LC(Z)  &kp LSHFT  &kp LS(APOS)  &kp LS(MINUS)  &kp LS(SEMI)  &kp DOT    &kp LEFT_BRACKET     &kp F7             &kp F2          &kp F10          &trans  &trans
+                                    &trans         &trans        &trans     &mt LA(LC(V)) LC(V)  &u_mt LC(X) LC(C)
             >;
         };
 
         SYMNUM {
             bindings = <
 &none   &none  &none  &kp UP_ARROW         &kp C_VOL_DN     &kp C_VOL_UP    &kp SEMI  &kp AMPS  &kp LS(N2)  &kp HASH    &kp RPAR   &kp DEL
-&none   &none  &none  &kp LEFT_ARROW       &kp RIGHT_ARROW  &kp C_PP        &kp BSPC  &kp FSLH  &kp LS(N6)  &kp LS(N4)  &trans     &kp LS(BACKSPACE)
+&none   &none  &none  &kp LEFT_ARROW       &kp RIGHT_ARROW  &kp C_PP        &kp BSPC  &kp FSLH  &kp LS(N6)  &kp LS(N4)  &trans     &trans
 &trans  &none  &none  &kp DOWN_ARROW       &trans           &trans          &kp LBKT  &kp EXCL  &kp PRCNT   &kp INT3    &kp RSHFT  &trans
                       &mt LA(LC(V)) LC(V)  &kp LC(C)        &kp LC(X)       &trans    &trans
             >;
@@ -152,7 +152,7 @@
         FUN {
             bindings = <
 &rgb_ug RGB_ON                  &rgb_ug RGB_OFF  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR      &rgb_ug RGB_HUI    &rgb_ug RGB_HUD    &kp F11          &kp F7           &kp F8  &kp F9  &kp F10    &rgb_ug RGB_SPI
-&rgb_ug RGB_BRI                 &rgb_ug RGB_BRD  &kp LC(PG_UP)    &none                &kp LC(PAGE_DOWN)  &kp K_APP          &kp BSPC         &kp F4           &kp F5  &kp F6  &trans     &kp LS(BSPC)
+&rgb_ug RGB_BRI                 &rgb_ug RGB_BRD  &kp LC(PG_UP)    &none                &kp LC(PAGE_DOWN)  &kp K_APP          &kp BSPC         &kp F4           &kp F5  &kp F6  &trans     &trans
 &rgb_ug RGB_COLOR_HSB(0,0,100)  &kp LSHFT        &kp LS(F11)      &none                &kp LC(N1)         &none              &kp F12          &kp F1           &kp F2  &kp F3  &kp RSHFT  &rgb_ug RGB_SPD
                                                                   &mt LA(LC(V)) LC(V)  &kp LC(C)          &kp LC(X)          &rgb_ug RGB_SAI  &rgb_ug RGB_SAD
             >;
