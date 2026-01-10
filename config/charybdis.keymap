@@ -143,10 +143,10 @@
 
         BASE {
             bindings = <
-&kp TAB           &kp Q        &kp W    &kp E     &kp R        &kp T          &kp Y                           &kp U      &kp I      &kp O    &kp P            &kp DEL
-&kp LCTRL         &kp A        &lt 2 S  &lt 3 D   &kp F        &kp G          &kp H                           &kp J      &kp K      &kp L    &kp ENTER        &kp RALT
-&mt LCTRL ESCAPE  &mt LSHFT Z  &kp X    &kp C     &kp V        &kp B          &kp N                           &kp M      &kp COMMA  &kp DOT  &mt RSHIFT FSLH  &lt 5 LS(BACKSPACE)
-                                        &mkp MB1  &lt 1 SPACE  &lt 2 LANG2    &mt INTERNATIONAL_4 LANGUAGE_1  &kp SPACE
+&kp TAB       &kp Q        &kp W    &kp E             &kp R        &kp T       &kp Y                           &kp U      &kp I      &kp O    &kp P            &kp DEL
+&kp LCTRL     &kp A        &lt 2 S  &lt 3 D           &kp F        &kp G       &kp H                           &kp J      &kp K      &kp L    &kp ENTER        &kp LS(BACKSPACE)
+&lt 5 ESCAPE  &mt LSHFT Z  &kp X    &kp C             &kp V        &kp B       &kp N                           &kp M      &kp COMMA  &kp DOT  &mt RSHIFT FSLH  &mo 5
+                                    &lt 2 LANGUAGE_2  &lt 1 SPACE  &mkp MB1    &mt INTERNATIONAL_4 LANGUAGE_1  &kp SPACE
             >;
         };
 
