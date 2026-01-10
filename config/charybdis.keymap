@@ -106,6 +106,16 @@
             bindings = <&kp RCTRL>;
             key-positions = <21 22>;
         };
+
+        leftclick {
+            bindings = <&mkp MB1>;
+            key-positions = <32 33>;
+        };
+
+        rightclick {
+            bindings = <&mkp MB2>;
+            key-positions = <33 34>;
+        };
     };
 
     behaviors {
@@ -143,10 +153,10 @@
 
         BASE {
             bindings = <
-&kp TAB       &kp Q        &kp W    &kp E        &kp R        &kp T               &kp Y                           &kp U      &kp I      &kp O    &kp P            &kp DELETE
-&kp LCTRL     &kp A        &lt 2 S  &lt 3 D      &kp F        &kp G               &kp H                           &kp J      &kp K      &kp L    &kp ENTER        &kp MINUS
-&lt 5 ESCAPE  &mt LSHFT Z  &kp X    &kp C        &kp V        &kp B               &kp N                           &kp M      &kp COMMA  &kp DOT  &mt RSHIFT FSLH  &lt 5 LS(BACKSPACE)
-                                    &lt 1 SPACE  &lt 1 SPACE  &lt 2 LANGUAGE_2    &mt INTERNATIONAL_4 LANGUAGE_1  &kp SPACE
+&kp TAB       &kp Q        &kp W    &kp E        &kp R        &kp T                   &kp Y                  &kp U      &kp I      &kp O    &kp P            &kp DELETE
+&kp LCTRL     &kp A        &lt 2 S  &lt 3 D      &kp F        &kp G                   &kp H                  &kp J      &kp K      &kp L    &kp ENTER        &kp MINUS
+&lt 5 ESCAPE  &mt LSHFT Z  &kp X    &kp C        &kp V        &kp B                   &kp N                  &kp M      &kp COMMA  &kp DOT  &mt RSHIFT FSLH  &lt 5 LS(BACKSPACE)
+                                    &lt 1 SPACE  &lt 1 SPACE  &mt LSHFT LANGUAGE_2    &mt RSHIFT LANGUAGE_1  &kp SPACE
             >;
         };
 
@@ -179,9 +189,9 @@
 
         AUTO-MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans    &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans    &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans    &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans    &trans  &trans      &trans  &trans    &trans    &trans    &trans  &trans
+&trans  &trans  &trans  &trans    &trans  &trans      &trans  &trans    &trans    &trans    &trans  &trans
+&trans  &trans  &trans  &trans    &trans  &trans      &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans  &trans
                         &mkp MB2  &none   &mkp MB1    &trans  &trans
             >;
         };
