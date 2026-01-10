@@ -27,21 +27,6 @@
     combos {
         compatible = "zmk,combos";
 
-        LeftClickRight {
-            bindings = <&mkp LCLK>;
-            key-positions = <31 32>;
-        };
-
-        RightClickRight {
-            bindings = <&mkp RCLK>;
-            key-positions = <32 33>;
-        };
-
-        MiddleClickRight {
-            bindings = <&mkp MCLK>;
-            key-positions = <33 34>;
-        };
-
         ParaLeft {
             bindings = <&kp LS(N8)>;
             key-positions = <16 14>;
@@ -54,12 +39,12 @@
 
         BrakLeft {
             bindings = <&kp RBKT>;
-            key-positions = <26 28>;
+            key-positions = <14 15 16>;
         };
 
         BrakRight {
             bindings = <&kp BSLH>;
-            key-positions = <31 33>;
+            key-positions = <19 20 21>;
         };
 
         minus {
@@ -69,12 +54,7 @@
 
         underbar {
             bindings = <&kp LS(INT1)>;
-            key-positions = <20 21>;
-        };
-
-        win {
-            bindings = <&kp LEFT_GUI>;
-            key-positions = <20 19 21>;
+            key-positions = <32 33>;
         };
 
         henkan {
@@ -85,6 +65,36 @@
         space {
             bindings = <&kp LS(SPACE)>;
             key-positions = <37 40>;
+        };
+
+        lang2 {
+            bindings = <&kp LANGUAGE_2>;
+            key-positions = <40 19>;
+        };
+
+        lang1 {
+            bindings = <&kp LANGUAGE_1>;
+            key-positions = <40 20>;
+        };
+
+        plus {
+            bindings = <&kp LS(SEMI)>;
+            key-positions = <8 9>;
+        };
+
+        asta {
+            bindings = <&kp LS(SQT)>;
+            key-positions = <4 3>;
+        };
+
+        eq {
+            bindings = <&kp LS(MINUS)>;
+            key-positions = <4 3 2>;
+        };
+
+        q {
+            bindings = <&kp LS(FSLH)>;
+            key-positions = <20 21>;
         };
     };
 
@@ -124,7 +134,7 @@
         BASE {
             bindings = <
 &kp ESC           &kp Q        &kp W    &kp E     &kp R        &kp T          &kp Y                           &kp U      &kp I      &kp O    &kp P            &kp DEL
-&kp TAB           &kp A        &lt 2 S  &lt 3 D   &kp F        &kp G          &kp H                           &kp J      &kp K      &kp L    &kp ENTER        &kp RALT
+&kp TAB           &mt LCTRL A  &lt 2 S  &lt 3 D   &kp F        &kp G          &kp H                           &kp J      &kp K      &kp L    &kp ENTER        &kp RALT
 &mt LCTRL ESCAPE  &mt LSHFT Z  &kp X    &kp C     &kp V        &kp B          &kp N                           &kp M      &kp COMMA  &kp DOT  &mt RSHIFT FSLH  &lt 5 LS(BACKSPACE)
                                         &mkp MB1  &lt 1 SPACE  &lt 2 LANG2    &mt INTERNATIONAL_4 LANGUAGE_1  &kp SPACE
             >;
