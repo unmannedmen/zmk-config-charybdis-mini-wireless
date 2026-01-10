@@ -153,10 +153,10 @@
 
         BASE {
             bindings = <
-&kp TAB       &kp Q        &kp W    &kp E                     &kp R        &kp T               &kp Y                           &kp U      &kp I      &kp O    &kp P            &kp MINUS
-&kp LCTRL     &kp A        &lt 2 S  &lt 3 D                   &kp F        &kp G               &kp H                           &kp J      &kp K      &kp L    &kp ENTER        &kp DEL
-&lt 5 ESCAPE  &mt LSHFT Z  &kp X    &kp C                     &kp V        &kp B               &kp N                           &kp M      &kp COMMA  &kp DOT  &mt RSHIFT FSLH  &lt 5 LS(BACKSPACE)
-                                    &mt LSHFT LS(LANGUAGE_5)  &lt 1 SPACE  &lt 2 LANGUAGE_2    &mt INTERNATIONAL_4 LANGUAGE_1  &kp SPACE
+&kp TAB       &kp Q        &kp W    &kp E    &kp R        &kp T                          &kp Y                           &kp U      &kp I      &kp O    &kp P            &kp MINUS
+&kp LCTRL     &kp A        &lt 2 S  &lt 3 D  &kp F        &kp G                          &kp H                           &kp J      &kp K      &kp L    &kp ENTER        &kp DEL
+&lt 5 ESCAPE  &mt LSHFT Z  &kp X    &kp C    &kp V        &kp B                          &kp N                           &kp M      &kp COMMA  &kp DOT  &mt RSHIFT FSLH  &lt 5 LS(BACKSPACE)
+                                    &mo 2    &lt 1 SPACE  &mt INT_MUHENKAN LANGUAGE_2    &mt INTERNATIONAL_4 LANGUAGE_1  &kp SPACE
             >;
         };
 
@@ -172,8 +172,8 @@
         SYMNUM {
             bindings = <
 &none   &none      &none  &kp C_VOL_UP  &kp C_VOL_DN  &kp C_PP     &kp SEMI  &kp APOS      &kp AMPS    &kp LS(N2)  &kp HASH   &trans
-&none   &none      &none  &kp LS(N8)    &kp LS(N9)    &kp K_APP    &kp BSPC  &kp LS(FSLH)  &kp LS(N6)  &kp LS(N4)  &trans     &trans
-&trans  &kp LSHFT  &none  &kp RBKT      &kp BSLH      &trans       &kp LBKT  &kp EXCL      &kp PRCNT   &kp INT3    &kp RSHFT  &trans
+&none   &none      &none  &mkp MB1      &mkp MB2      &kp K_APP    &kp BSPC  &kp LS(FSLH)  &kp LS(N6)  &kp LS(N4)  &trans     &trans
+&trans  &kp LSHFT  &none  &mkp MB3      &none         &trans       &kp LBKT  &kp EXCL      &kp PRCNT   &kp INT3    &kp RSHFT  &trans
                           &trans        &trans        &trans       &trans    &trans
             >;
         };
@@ -189,9 +189,9 @@
 
         AUTO-MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans    &trans    &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans    &trans    &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &mkp MB1  &mkp MB2  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
                         &none   &none   &mkp MB1    &trans  &trans
             >;
         };
