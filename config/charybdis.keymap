@@ -74,7 +74,7 @@
 
         lang1 {
             bindings = <&kp LANGUAGE_1>;
-            key-positions = <40 20>;
+            key-positions = <40 31>;
         };
 
         plus {
@@ -116,6 +116,11 @@
             bindings = <&mkp MB2>;
             key-positions = <33 34>;
         };
+
+        leftshift {
+            bindings = <&kp LSHFT>;
+            key-positions = <25 26>;
+        };
     };
 
     behaviors {
@@ -153,10 +158,10 @@
 
         BASE {
             bindings = <
-&kp TAB       &kp Q        &kp W    &kp E    &kp R        &kp T                          &kp Y                           &kp U      &kp I      &kp O    &kp P            &kp MINUS
-&kp LCTRL     &kp A        &lt 2 S  &lt 3 D  &kp F        &kp G                          &kp H                           &kp J      &kp K      &kp L    &kp ENTER        &kp DEL
-&lt 5 ESCAPE  &mt LSHFT Z  &kp X    &kp C    &kp V        &kp B                          &kp N                           &kp M      &kp COMMA  &kp DOT  &mt RSHIFT FSLH  &lt 5 LS(BACKSPACE)
-                                    &mo 2    &lt 1 SPACE  &mt INT_MUHENKAN LANGUAGE_2    &mt INTERNATIONAL_4 LANGUAGE_1  &kp SPACE
+&kp TAB       &kp Q  &kp W    &kp E                        &kp R        &kp T              &kp Y                           &kp U      &kp I      &kp O    &kp P            &kp MINUS
+&kp LCTRL     &kp A  &lt 2 S  &lt 3 D                      &kp F        &kp G              &kp H                           &kp J      &kp K      &kp L    &kp ENTER        &kp DEL
+&lt 5 ESCAPE  &kp Z  &kp X    &kp C                        &kp V        &kp B              &kp N                           &kp M      &kp COMMA  &kp DOT  &mt RSHIFT FSLH  &lt 5 LS(BACKSPACE)
+                              &mt INT_MUHENKAN LANGUAGE_2  &lt 1 SPACE  &mt LSHFT ENTER    &mt INTERNATIONAL_4 LANGUAGE_1  &kp SPACE
             >;
         };
 
@@ -165,7 +170,7 @@
 &trans  &kp LC(Z)  &kp N7  &kp N8  &kp N9  &kp N0                 &kp PAGE_UP      &kp HOME        &kp UP_ARROW    &kp END          &kp PAGE_DOWN  &trans
 &trans  &kp TAB    &kp N4  &kp N5  &kp N6  &kp K_APP              &kp BACKSPACE    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans         &trans
 &trans  &kp LSHFT  &kp N1  &kp N2  &kp N3  &mt LA(LC(V)) LC(V)    &mt LC(X) LC(C)  &kp F7          &kp F2          &kp F10          &kp RSHFT      &trans
-                           &trans  &trans  &trans                 &kp RALT         &kp LGUI
+                           &trans  &trans  &trans                 &kp LALT         &kp LGUI
             >;
         };
 
